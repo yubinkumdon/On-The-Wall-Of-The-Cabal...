@@ -1,0 +1,37 @@
+/* Basic styling for a blank white background */
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+#fly-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Styling for each fly */
+.fly {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url('fly.png'); /* Path to the fly image */
+    background-size: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Styling for the phrase text */
+.phrase {
+    position: absolute;
+    top: -20px; /* Position above the fly */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: black; /* Ensure text is black */
+    background-color: white;
+    padding: 2px 4px;
+    border-radius: 3px;
+    opacity: 0.8;
+    font-family: Arial, sans-serif;
+}
